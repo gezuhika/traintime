@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Time</title>
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+
+    <!-- Moment -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Jumbotron Title -->
+        <div class="jumbotron">
+            <h1 class="text-center">Anytime is Train Time</h1>
+            <h3 class="text-center">"boo boo. foo foo."</h3>
+        </div>
+
+        <div class="container-schedule">
+            <div id="train-data">
+                <h4>Current Train Schedule</h4>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="train-schedule">
+                        <table class="table" id="train-table">
+                            <thead>
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>
+                                    <th>Frequency (min)</th>
+                                    <th>Next Arrival</th>
+                                    <th>Mins Away</th>
+                                </tr>
+                            </thead>
+                            <tbody class="train-info">
+                                <!-- Insert train rows here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-schedule">
+            <div id="heading">
+                <h4>Add Train</h4>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputTrainName">Train Name</label>
+                    <input type="text" class="form-control" id="search-name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputDestination">Destination</label>
+                    <input type="text" class="form-control" id="search-destination" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFirstTrain">First Train Time (HH:mm - military time)</label>
+                    <input type="text" class="form-control" id="search-time" placeholder="HH:mm">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFrequency">Frequency (min)</label>
+                    <input type="text" class="form-control" id="search-frequency" placeholder="">
+                </div>
+
+                <button id="submit" class="btn btn-default">Submit</button>
+
+            </form>
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="assets/app.js"></script>
+</body>
+
+</html>

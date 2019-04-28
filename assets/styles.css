@@ -1,0 +1,74 @@
+body {
+    /* background: rgb(90, 87, 87); */
+    background-image: (rgb(0, 204, 255));
+    color: grey;
+}
+
+.container-schedule {
+    background: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+#train-data {
+    background: rgb(94, 9, 230);
+    color: white;
+    padding-top: 5px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+.table{
+    color: grey;
+}
+
+.parameters {
+    background: white;
+    color: grey;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding-bottom: 10px;
+}
+
+#heading {
+    background: rgb(94, 9, 230);
+    color: white;
+    padding-top: 9px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-left: 10px;
+}
+
+.form-group {
+    background: white;
+    padding: 0px 10px 0px 10px;
+}
+
+.trainform {
+    /* background: red; */
+    border: 5px;
+}
+
+.jumbotron {
+    background: rgb(53, 54, 53);
+    color: white;
+}
+
+.btn {
+    margin-left: 10px;
+}
+
+h4 {
+    margin-left: 10px;
+    padding-bottom: 14px;
+}
+
+/* .train-info {
+    padding: 8px;
+    line-height: 1.42857143;
+} */
